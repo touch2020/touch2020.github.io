@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>이력서</title>
+<style>
+  
+
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: 'Noto Sans CJK KR', 'Noto Sans KR', sans-serif;
+    font-size: 13px;
+    line-height: 1.7;
+    color: #1a1a1a;
+    background: #fff;
+    padding: 52px 60px;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+
+  .header { margin-bottom: 28px; }
+  .header h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; margin-bottom: 4px; }
+  .header .role { font-size: 13px; color: #666; font-weight: 400; margin-bottom: 8px; }
+  .header .contact { font-size: 11.5px; color: #888; }
+  .header .contact span { margin-right: 14px; }
+
+  hr { border: none; border-top: 1px solid #ddd; margin: 18px 0; }
+
+  .section-label {
+    font-size: 10px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: #999;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  .about { font-size: 12.5px; color: #444; line-height: 1.8; margin-bottom: 4px; }
+
+  .skills-table { width: 100%; border-collapse: collapse; }
+  .skills-table td { padding: 3px 0; vertical-align: top; font-size: 12px; }
+  .skills-table td:first-child { color: #888; width: 140px; font-size: 11.5px; padding-right: 16px; white-space: nowrap; }
+  .skills-table td:last-child { color: #222; }
+
+  .company-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+  .company-name { font-size: 14px; font-weight: 700; color: #111; }
+  .company-period { font-size: 11px; color: #999; }
+  .company-role { font-size: 11.5px; color: #888; margin-bottom: 16px; }
+
+  .project { margin-bottom: 18px; }
+  .project-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 2px;
+  }
+  .project-title {
+    font-size: 12.5px;
+    font-weight: 600;
+    color: #111;
+    border-left: 3px solid #333;
+    padding-left: 8px;
+  }
+  .project-period { font-size: 11px; color: #aaa; }
+  .project-desc { font-size: 11px; color: #aaa; margin-bottom: 7px; padding-left: 11px; }
+
+  ul.bullets { list-style: none; padding-left: 11px; }
+  ul.bullets > li {
+    font-size: 12px;
+    color: #333;
+    line-height: 1.75;
+    padding-left: 14px;
+    position: relative;
+    margin-bottom: 3px;
+  }
+  ul.bullets > li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    color: #555;
+  }
+  ul.bullets > li.sub {
+    padding-left: 22px;
+    color: #555;
+    font-size: 11.5px;
+  }
+  ul.bullets > li.sub::before { content: '–'; color: #aaa; }
+
+  .edu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+  .edu-name { font-size: 13px; font-weight: 600; }
+  .edu-period { font-size: 11px; color: #aaa; }
+  .edu-detail { font-size: 11.5px; color: #888; margin-top: 2px; }
+
+  @media print {
+    body { padding: 30px 40px; }
+    @page { margin: 0; size: A4; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<div class="header">
+  <h1>[이름]</h1>
+  <div class="role">백엔드 개발자</div>
+  <div class="contact">
+    <span>[전화번호]</span>
+    <span>✉ [이메일]</span>
+    <span>[GitHub URL]</span>
+  </div>
+</div>
+
+<hr>
+
+<!-- ABOUT -->
+<div class="section-label">A B O U T</div>
+<p class="about">
+  Java / Spring Boot 기반 백엔드 개발자로, 매장 관리 SaaS 플랫폼 워키도키 및 브라우니 무인매장 관리 시스템 백엔드 개발에 2년간 참여했습니다.
+  구인구직 플랫폼 신규 설계부터 소비기한 관리, 알림 시스템, 브랜드 멀티 매장 관리까지 다양한 도메인을 경험했으며,
+  실서비스 운영 중 발생한 슬로우 쿼리·버그를 분석하고 해결하는 문제 해결 능력을 갖추고 있습니다.
+</p>
+
+<hr>
+
+<!-- SKILLS -->
+<div class="section-label">S K I L L S</div>
+<table class="skills-table">
+  <tr>
+    <td>Language / Framework</td>
+    <td>Java 11 · Spring Boot · Spring Security · JPA · MyBatis &nbsp;/&nbsp; Node.js · TypeScript · Express</td>
+  </tr>
+  <tr>
+    <td>Database</td>
+    <td>MySQL · Redis · PostgreSQL</td>
+  </tr>
+  <tr>
+    <td>Infrastructure</td>
+    <td>AWS S3 · CloudWatch · CodePipeline (CI/CD)</td>
+  </tr>
+  <tr>
+    <td>Tools</td>
+    <td>Git · IntelliJ · Postman · Swagger (OpenAPI 3) · Sentry · Flyway</td>
+  </tr>
+</table>
+
+<hr>
+
+<!-- EXPERIENCE -->
+<div class="section-label">E X P E R I E N C E</div>
+
+<div class="company-header">
+  <span class="company-name">[회사명] — 워키도키 / 브라우니</span>
+  <span class="company-period">2021.08 ‒ 2023.07 (2년)</span>
+</div>
+<div class="company-role">백엔드 개발자 | Java / Spring Boot / Node.js / MySQL / PostgreSQL / Redis / AWS</div>
+
+<!-- 1. 구인구직 -->
+<div class="project">
+  <div class="project-header">
+    <span class="project-title">구인구직 플랫폼 (워키도키)</span>
+    <span class="project-period">2023.01 ‒ 2023.03</span>
+  </div>
+  <div class="project-desc">알바생·사장 양방향 채용 플랫폼 백엔드 신규 설계 및 전체 구현 — 이력서·공고·경력·설문·매칭·지원·제안 7개 도메인</div>
+  <ul class="bullets">
+    <li><b>지원/제안 이중 흐름의 잘못된 상태 변경 차단</b> — ApplicantState Enum에 단계(step)·행동 주체(alarmTo)를 값으로 부여하고, 컨트롤러에서 역할 검증(1차) + 서비스에서 전이 순서 검증(2차) 이중 방어 구현. 알바생이 사장 권한 상태를 변경하거나 단계를 건너뛰는 전이를 도메인 레벨에서 원천 차단</li>
+    <li><b>최종 합격 시 5단계 연쇄 처리를 단일 트랜잭션으로 원자화</b> — 멤버 등록 → 기본 권한 삽입 → 폴더 접근 권한 생성 → 게시물 읽음 처리를 @Transactional로 묶어, 어느 단계 실패 시에도 전체 롤백. "멤버는 됐지만 권한은 없는" 중간 상태를 코드 레벨에서 원천 차단</li>
+    <li><b>Facade 패턴으로 복합 도메인 트랜잭션 관리</b> — 구직 기본 정보·희망 지역·근무 기간 태그 3개 서비스를 단일 트랜잭션으로 묶어 부분 실패 시 전체 롤백 보장하면서, 각 서비스의 단일 책임 원칙 유지</li>
+    <li>AWS S3 Private 버킷 + Pre-signed URL로 이력서·공고 사진 보안 접근 — 만료 시간 있는 임시 URL 발급으로 로그인 사용자에게만 한시적 접근 허용</li>
+    <li>JPA (단순 CRUD) + MyBatis (다테이블 JOIN·매칭 집계 쿼리) 혼용 — ORM 편의성과 Native 쿼리 제어권을 상황에 따라 선택</li>
+  </ul>
+</div>
+
+<!-- 2. 소비기한 -->
+<div class="project">
+  <div class="project-header">
+    <span class="project-title">소비기한 관리 시스템 (워키도키)</span>
+    <span class="project-period">2023.04 ‒ 2023.07</span>
+  </div>
+  <div class="project-desc">바코드 기반 상품 입고·소비기한 추적 및 일간·주간·월간 리포트 기능 개발</div>
+  <ul class="bullets">
+    <li>소비기한 일간·주간·월간 리포트 API 신규 개발 및 <b>UTC → KST 시간 기준 불일치로 인한 집계 오류 수정</b> — DB 저장은 UTC, 리포트 기준은 KST 자정으로 이원화되어 있던 구조적 버그를 원인 분석 후 변환 로직 일원화</li>
+    <li><b>임박 상품 시간순 정렬 오류 수정</b> — 만료 기준이 당일 00시로 설정되어 당일 만료 상품이 목록에서 누락되던 버그 발견, 만료 기준을 당일 24시로 재정의하고 시간 미입력 상품의 정렬 순서 별도 처리</li>
+    <li>소비기한 리포트 랭킹 집계 로직 함수화 리팩토링 및 매장·근무자 평균 등록 수 산출 로직 정비, 바코드 스케줄러 Soft Delete 누락 처리</li>
+  </ul>
+</div>
+
+<!-- 3. 알림·폴더·멀티매장 -->
+<div class="project">
+  <div class="project-header">
+    <span class="project-title">알림 시스템 · 폴더 권한 · 브랜드 멀티 매장 (워키도키)</span>
+    <span class="project-period">2022.01 ‒ 2023.03</span>
+  </div>
+  <div class="project-desc">플랫폼 핵심 인프라 기능 개발 및 실서비스 운영 버그 수정</div>
+  <ul class="bullets">
+    <li><b>알림 리스트 조회 슬로우 쿼리 개선</b> — 실서비스 모니터링에서 발견, 원인 분석 후 쿼리 최적화. 경력 완료 업무 조회 쿼리도 스칼라 서브쿼리 → 인라인 뷰로 변경하여 성능 향상</li>
+    <li><b>Refresh Token 재발급 시 토큰 중복 발급 버그 수정</b> — 기존 토큰을 삭제하지 않고 신규 발급하던 로직을 Redis에서 userId 기준 전체 토큰 조회·삭제 후 재발급하는 방식으로 수정</li>
+    <li>폴더 권한 시스템 설계 및 구현 — 생성·수정·조회 시 권한 검증, 신규 합류 멤버 자동 권한 부여, 권한 없는 사용자 알림 차단, Spring Security 연동</li>
+    <li>비상벨 기능 전체 구현 — 담당자 CRUD, 긴급 메시지 전송 (일 3회 제한), Flyway 마이그레이션 포함</li>
+    <li>카카오 비즈엠 알림톡 템플릿 연동 및 전달사항 미확인자 재전송 API 개발</li>
+    <li>브랜드 매장 분류 편집, 공통 업무/폴더 API, 매장 실사용 여부 배치 스케줄러 개발</li>
+  </ul>
+</div>
+
+<!-- 4. 브라우니 -->
+<div class="project">
+  <div class="project-header">
+    <span class="project-title">브라우니 무인매장 관리 웹 시스템</span>
+    <span class="project-period">2021.08 ‒ 2023.07</span>
+  </div>
+  <div class="project-desc">무인매장 운영을 위한 결제·스케줄·어드민·알림 백엔드 개발 | Node.js · TypeScript · Express · KG이니시스 · PostgreSQL · AWS</div>
+  <ul class="bullets">
+    <li>KG이니시스 빌링키 기반 <b>정기결제 시스템 전체 설계 및 구현</b> — 빌링키 발급 → 실결제 → 재결제 → 환불/철회 전 플로우, 정기결제 전용 MID/signkey 분리, SHA-512 위변조 방지 서명 생성, 쿠폰·포인트 적용 포함</li>
+    <li><b>이니시스 0원 결제 미지원 이슈 해결</b> — 쿠폰+포인트 전액 할인 시 PG사를 우회하여 직접 PAID 처리, tid를 FREE_PAYMENT로 분기하여 일반결제와 구분</li>
+    <li><b>Observer 패턴 기반 스케줄러 추상화</b> — ITask(onSubscribe/beforeDo/do/afterDo) 인터페이스 설계, cron 표현식으로 태스크 등록·해지, 실패 시 슬랙 자동 알림</li>
+    <li>PostgreSQL <b>GENERATE_SERIES + holiday 테이블 JOIN</b>으로 공휴일·주말 제외 일정 자동 생성, 재귀 CTE로 영업일 기준 역산하여 종료 3일 전 알림 대상 추출</li>
+    <li><b>알림 전용 마이크로서비스</b> 구현 — 카카오 알림톡(bizmsg), 슬랙 Block Kit, 이메일, SMS를 단일 서버로 통합, Joi 스키마 기반 요청 검증, 예약 발송 취소 API 포함</li>
+    <li>브라우니/워키도키 <b>이중 DB 동시 연결</b> — 크루 조회 시 양 DB를 Promise.all 병렬 조회 후 응답 합산, wkdk_user_id → 전화번호 → 신규 생성 3단계 upsert로 크루 데이터 정합성 보장</li>
+    <li>domain × PERMISSION_TYPE(CRUD+EXPORT) 조합의 <b>RBAC 권한 미들웨어</b> — Role-Permission 3단 조인으로 API별 세분화된 접근 제어, CTE 기반 집계 쿼리로 매장 스케줄 등록률·크루 활동 현황 단일 쿼리 조회</li>
+    <li>결제 완료 시 매장 서비스 수 조회로 <b>중복 생성 방지 후 워키도키 매장 자동 생성</b> 연동 (PC·모바일·무통장 3개 결제 플로우 모두 적용)</li>
+  </ul>
+</div>
+
+<!-- 5. 공통 인프라 -->
+<div class="project">
+  <div class="project-header">
+    <span class="project-title">공통 — 운영 및 인프라</span>
+    <span class="project-period">2021.08 ‒ 2023.07</span>
+  </div>
+  <ul class="bullets">
+    <li>브라우니 브랜드 멤버 합류 시 외부 브라우니 DB 업데이트 연동 — WebClient 비동기 처리로 응답 지연 방지</li>
+    <li>AWS CodePipeline 기반 CI/CD 파이프라인 구축 및 운영 (dev / stage / prod 3단계 환경 분리)</li>
+    <li>AWS CloudWatch + Sentry 연동 에러 모니터링 — 모든 예외에 Request URI·파라미터·바디·토큰 컨텍스트 자동 첨부</li>
+    <li>ContentCachingRequestWrapper 기반 요청/응답 전체 로깅 필터 구현 (응답 시간 측정 포함)</li>
+    <li>Flyway 마이그레이션으로 DB 스키마 버전 관리, Swagger OpenAPI 3 기반 API 문서 전체 관리</li>
+    <li>2년간 750+ 커밋 — fix / feat / hotfix / refactor 유형별 커밋 관리, 운영 환경 버그 다수 발견 및 수정</li>
+  </ul>
+</div>
+
+<hr>
+
+<!-- EDUCATION -->
+<div class="section-label">E D U C A T I O N</div>
+<div class="edu-header">
+  <span class="edu-name">한국외국어대학교</span>
+  <span class="edu-period">2025.09 졸업</span>
+</div>
+<div class="edu-detail">정보통신공학과 · 학사</div>
+
+</body>
+</html>
